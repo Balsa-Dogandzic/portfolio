@@ -38,8 +38,8 @@ body {
     display: flex;
 }
 
-.nav-item a:link,
-.nav-item a:visited {
+.nav-list .nav-item a:link,
+.nav-list .nav-item a:visited {
     color: rgb(75, 75, 75);
     text-decoration: none;
     font-size: 2rem;
