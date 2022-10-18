@@ -22,6 +22,10 @@ body {
     text-align: center;
 }
 
+.heading {
+    text-shadow: 1px 1px 1px #fff;
+}
+
 .nav {
     padding: 1rem;
     display: flex;
