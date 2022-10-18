@@ -53,8 +53,8 @@ body {
     margin-right: 1.5rem;
 }
 
-.nav-item a:hover,
-.nav-item a:focus,
+.nav-list .nav-item a:hover,
+.nav-list .nav-item a:focus,
 .about:hover,
 .about:focus
 {
@@ -232,6 +232,18 @@ footer {
     padding: 1em;
 }
 
+.social-networks {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.social-networks li{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1.5em;
+}
+
 h4.bijela, .bijela{
     color: #fff;
     text-align: left;
@@ -244,27 +256,7 @@ a {
 
 a:hover, a:focus {
     color: rgb(85, 85, 85);
-}
-
-.contact-info .nav-list {
-    padding-inline-start: 0;
-}
-
-.contact-info .nav-list .nav-item a:link,
-.contact-info .nav-list .nav-item a:visited {
-    color: #fff;
-}
-
-.contact-info .nav-list li.instagram a:hover,
-.contact-info .nav-list li.instagram a:focus,
-.contact-info .nav-list li.github a:hover,
-.contact-info .nav-list li.github a:focus {
-    color: rgb(138, 58, 185);
-}
-
-.contact-info .nav-list li.linkedin a:hover,
-.contact-info .nav-list li.linkedin a:focus {
-    color: rgb(0, 114, 177);
+    outline: none;
 }
 
 .go-up {
