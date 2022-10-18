@@ -40,7 +40,7 @@ body {
 
 .nav .nav-list .nav-item a:link,
 .nav .nav-list .nav-item a:visited {
-    color: rgb(57, 57, 57);
+    color: rgb(75, 75, 75);
     text-decoration: none;
     font-size: 2rem;
     margin-right: 1.5em;
@@ -48,7 +48,7 @@ body {
 
 .about:link,
 .about:visited {
-    color: rgb(57, 57, 57);
+    color: rgb(75, 75, 75);
     text-decoration: none;
     margin-right: 1.5rem;
 }
@@ -70,11 +70,13 @@ main {
     flex-wrap: wrap;
 }
 
+/*Separator*/
 .separator {
     width: 100%;
     height: 15vh;
 }
 
+/*About me sekcija*/
 .about-section {
     max-width: 80%;
     background-color: rgb(244, 244, 244);
@@ -115,7 +117,102 @@ main {
     margin-block-start: 0;
 }
 
+.cetvorka {
+    font-size: 1rem;
+    margin-top: 1em;
+    text-align: center;
+}
+
 .para {
     color: rgb(57, 57, 57);
     line-height: 1.5;
+}
+
+/*Skills*/
+
+.skills-section {
+    width:80%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+}
+
+.caption {
+    grid-column: 1 / 4;
+}
+
+.languages,
+.frameworks,
+.others {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.frameworks {
+    border-left: 1px solid rgb(165, 108, 42);
+    border-right: 1px solid rgb(165, 108, 42);
+}
+.skills {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.skills li {
+    color: rgb(57, 57, 57);
+    margin-bottom: 1em;
+}
+
+/*Projekti sekcija*/
+
+.projects {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 2em;
+    background-color: rgb(244, 244, 244);
+    border-radius: 15px 0 0 15px;
+    border-right: 5px solid rgb(165, 108, 42);
+}
+
+.project {
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    background-color: rgb(191, 116, 30);
+    outline: 3px solid rgb(141, 86, 23);
+    border-radius: 25px;
+}
+
+.projects .caption .head {
+    margin-block-start: 1em;
+    margin-left: 1em;
+}
+
+.project .cetvorka,
+.project p {
+    color: #fff;
+}
+
+.project-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.2em 1em 0.2em 1em;
+    outline: 1px solid rgb(141, 86, 23);
+    background-color: rgb(255, 158, 46);
+    border-radius: 10px;
+}
+
+.project-link:hover,
+.project-link:focus {
+    background-color: rgb(141, 86, 23);
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(57, 57, 57);
 }
