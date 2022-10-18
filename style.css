@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
 }
 
+/*Heading sekcija*/
 .container {
     background-image: url(images/nicola-de-poli-AsUpMlc1moY-unsplash.jpg);
     background-repeat: no-repeat;
@@ -14,7 +15,7 @@ body {
 .front {
     width: 100%;
     height: 90vh;
-    color: rgb(69, 69, 69);
+    color: rgb(57, 57, 57);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +36,7 @@ body {
 
 .nav .nav-list .nav-item a:link,
 .nav .nav-list .nav-item a:visited {
-    color: rgb(69, 69, 69);
+    color: rgb(57, 57, 57);
     text-decoration: none;
     font-size: 2rem;
     margin-right: 1.5em;
@@ -43,7 +44,7 @@ body {
 
 .about:link,
 .about:visited {
-    color: rgb(69, 69, 69);
+    color: rgb(57, 57, 57);
     text-decoration: none;
     margin-right: 1.5rem;
 }
@@ -55,4 +56,62 @@ body {
 {
     outline: none;
     color: black;
+}
+
+/*Main sekcija*/
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.separator {
+    width: 100%;
+    height: 15vh;
+}
+
+.about-section {
+    max-width: 80%;
+    background-color: rgb(244, 244, 244);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    padding: 2em;
+    border-right: 5px solid rgb(165, 108, 42);
+}
+
+.about-section figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-section figure img {
+    width: 80%;
+    border-radius: 50%;
+    padding: 2em 1em 2em 1em;
+}
+
+.about-section figure figcaption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(57, 57, 57);
+}
+
+.about-section section {
+    margin: 1em;
+    padding: 1em;
+}
+
+.head {
+    color: rgb(57, 57, 57);
+    font-size: 1.75rem;
+    margin-block-start: 0;
+}
+
+.para {
+    color: rgb(57, 57, 57);
+    line-height: 1.5;
 }
