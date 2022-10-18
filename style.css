@@ -33,13 +33,13 @@ body {
     justify-content: space-between;
 }
 
-.nav .nav-list {
+.nav-list {
     list-style: none;
     display: flex;
 }
 
-.nav .nav-list .nav-item a:link,
-.nav .nav-list .nav-item a:visited {
+.nav-item a:link,
+.nav-item a:visited {
     color: rgb(75, 75, 75);
     text-decoration: none;
     font-size: 2rem;
@@ -53,8 +53,8 @@ body {
     margin-right: 1.5rem;
 }
 
-.nav .nav-list .nav-item a:hover,
-.nav .nav-list .nav-item a:focus,
+.nav-item a:hover,
+.nav-item a:focus,
 .about:hover,
 .about:focus
 {
@@ -182,7 +182,7 @@ main {
     margin: 1em;
     padding: 1em;
     text-align: left;
-    background-color: rgb(191, 116, 30);
+    background-color: rgb(255, 158, 46);
     outline: 3px solid rgb(141, 86, 23);
     border-radius: 25px;
 }
@@ -197,22 +197,90 @@ main {
     color: #fff;
 }
 
+.project p {
+    height: 8rem;
+}
+
 .project-link {
     color: #fff;
     text-decoration: none;
     padding: 0.2em 1em 0.2em 1em;
-    outline: 1px solid rgb(141, 86, 23);
-    background-color: rgb(255, 158, 46);
+    outline: 2px solid rgb(141, 86, 23);
+    background-color: rgb(255, 136, 0);
     border-radius: 10px;
 }
 
 .project-link:hover,
 .project-link:focus {
     background-color: rgb(141, 86, 23);
+    color: #fff;
+}
+
+.project-link:active {
+    background-color: rgb(110, 67, 18);
+    outline: 2px solid rgb(110, 67, 18);
 }
 
 /*Footer*/
 
 footer {
     background-color: rgb(57, 57, 57);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 1em;
+}
+
+h4.bijela, .bijela{
+    color: #fff;
+    text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: rgb(85, 85, 85);
+}
+
+.contact-info .nav-list {
+    padding-inline-start: 0;
+}
+
+.contact-info .nav-list .nav-item:link,
+.contact-info .nav-list .nav-item a:visited {
+    color: #fff;
+}
+
+.contact-info .nav-list li.instagram a:hover,
+.contact-info .nav-list li.instagram a:focus,
+.contact-info .nav-list li.github a:hover,
+.contact-info .nav-list li.github a:focus {
+    color: rgb(138, 58, 185);
+}
+
+.contact-info .nav-list li.linkedin a:hover,
+.contact-info .nav-list li.linkedin a:focus {
+    color: rgb(0, 114, 177);
+}
+
+.go-up {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
+}
+.go-up img {
+    width: 15%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.last-line {
+    grid-column: 1 / 5;
+    font-size: 0.9rem;
+    text-align: center;
 }
