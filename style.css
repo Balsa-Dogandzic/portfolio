@@ -250,7 +250,7 @@ a:hover, a:focus {
     padding-inline-start: 0;
 }
 
-.contact-info .nav-list .nav-item:link,
+.contact-info .nav-list .nav-item a:link,
 .contact-info .nav-list .nav-item a:visited {
     color: #fff;
 }
