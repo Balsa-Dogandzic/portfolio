@@ -1,7 +1,18 @@
+/*Opsti selektori*/
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #555555;
+    outline: none;
 }
 
 /*Heading sekcija*/
@@ -15,7 +26,7 @@ body {
 .front {
     width: 100%;
     height: 90vh;
-    color: rgb(57, 57, 57);
+    color: #393939;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,16 +51,14 @@ body {
 
 .nav-list .nav-item a:link,
 .nav-list .nav-item a:visited {
-    color: rgb(75, 75, 75);
-    text-decoration: none;
+    color: #4b4b4b;
     font-size: 2rem;
     margin-right: 1.5em;
 }
 
 .about:link,
 .about:visited {
-    color: rgb(75, 75, 75);
-    text-decoration: none;
+    color: #4b4b4b;
     margin-right: 1.5rem;
 }
 
@@ -58,8 +67,7 @@ body {
 .about:hover,
 .about:focus
 {
-    outline: none;
-    color: black;
+    color: #000;
 }
 
 /*Main sekcija*/
@@ -68,7 +76,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(236, 236, 236);
+    background-color: #ececec;
 }
 
 /*Separator*/
@@ -80,13 +88,13 @@ main {
 /*About me sekcija*/
 .about-section {
     max-width: 80%;
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     border-radius: 15px 0 0 15px;
     padding: 2em;
-    border-right: 5px solid rgb(165, 108, 42);
+    border-right: 5px solid #a56c2a;
 }
 
 .about-section figure {
@@ -104,7 +112,7 @@ main {
 .about-section figure figcaption {
     font-size: 1.5rem;
     font-weight: 700;
-    color: rgb(57, 57, 57);
+    color: #393939;
 }
 
 .about-section section {
@@ -113,7 +121,7 @@ main {
 }
 
 .head {
-    color: rgb(57, 57, 57);
+    color: #393939;
     font-size: 1.75rem;
     margin-block-start: 0;
 }
@@ -125,12 +133,11 @@ main {
 }
 
 .para {
-    color: rgb(57, 57, 57);
+    color: #393939;
     line-height: 1.5;
 }
 
 /*Skills*/
-
 .skills-section {
     width:80%;
     display: grid;
@@ -153,8 +160,8 @@ main {
 }
 
 .frameworks {
-    border-left: 1px solid rgb(165, 108, 42);
-    border-right: 1px solid rgb(165, 108, 42);
+    border-left: 1px solid #a56c2a;
+    border-right: 1px solid #a56c2a;
 }
 .skills {
     list-style: none;
@@ -162,18 +169,17 @@ main {
 }
 
 .skills li {
-    color: rgb(57, 57, 57);
+    color: #393939;
     margin-bottom: 1em;
 }
 
 /*Projekti sekcija*/
-
 .projects-section {
     width: 80%;
     padding: 2em;
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
     border-radius: 15px 0 0 15px;
-    border-right: 5px solid rgb(165, 108, 42);
+    border-right: 5px solid #a56c2a;
 }
 
 .projects {
@@ -186,10 +192,10 @@ main {
 .project {
     min-width: 250px;
     flex: 1;
-    outline: 1px solid rgb(165, 108, 42);
+    outline: 1px solid #a56c2a;
     display: flex;
     justify-content: stretch;
-    background-color: rgb(255, 162, 56);
+    background-color: #ffa238;
     padding: 1em 0 1em 0;
 }
 
@@ -204,32 +210,32 @@ main {
 .project-link:link,
 .project-link:visited {
     padding: 0.5em 1em 0.5em 1em;
-    border: 1px solid rgb(165, 108, 42);
+    border: 1px solid #a56c2a;
     border-radius: 15px;
 }
 
 .project-link:hover,
 .project-link:focus {
     color: #fff;
-    background-color: rgb(165, 108, 42);
+    background-color: #a56c2a;
 }
 
 .project-link:active {
     color: #fff;
-    background-color: rgb(122, 80, 31);
-    border: 1px solid rgb(122, 80, 31);
+    background-color: #7a501f;
+    border: 1px solid #7a501f;
 }
 
 .project .project-txt .bijela {
     margin-block-end: 0;
 }
-/*Footer*/
 
+/*Footer*/
 footer {
-    background-color: rgb(57, 57, 57);
+    background-color: #393939;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 1em;
 }
@@ -241,7 +247,6 @@ footer {
 }
 
 .social-networks li{
-    text-decoration: none;
     font-size: 2rem;
     margin-right: 1.5em;
 }
@@ -251,77 +256,33 @@ h4.bijela, .bijela{
     text-align: left;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    color: rgb(85, 85, 85);
-    outline: none;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-input, .textarea {
-    margin-bottom: 10px;
-    resize: none;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-.submit {
-    width: 50%;
-}
-
-input[type=submit] {
-    width: 100%;
-    color: #fff;
-    background-color: rgb(255, 162, 56);
-    padding: 0.5em 1em 0.5em 1em;
-    border: 1px solid rgb(165, 108, 42);
-    border-radius: 15px;
-}
-
-input[type=submit]:hover,
-input[type=submit]:focus {
-    background-color: rgb(165, 108, 42);
-}
-
 .go-up {
     display: flex;
     justify-content: right;
     align-items: flex-end;
     text-align: right;
 }
+
 .go-up img {
-    width: 15%;
+    width: 100%;
     background-color: #fff;
     border-radius: 50%;
 }
 
+.go-up-link {
+    width: 15%;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.go-up a img:hover {
+    background-color: #555555;
+    outline: 1px solid #131313;
+    cursor: pointer;
+}
+
 .last-line {
-    grid-column: 1 / 6;
+    grid-column: 1 / 5;
     font-size: 0.9rem;
     text-align: center;
 }
