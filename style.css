@@ -68,12 +68,13 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: rgb(236, 236, 236);
 }
 
 /*Separator*/
 .separator {
     width: 100%;
-    height: 15vh;
+    height: 12vh;
 }
 
 /*About me sekcija*/
@@ -167,67 +168,68 @@ main {
 
 /*Projekti sekcija*/
 
-.projects {
+.projects-section {
     width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
     padding: 2em;
     background-color: rgb(244, 244, 244);
     border-radius: 15px 0 0 15px;
     border-right: 5px solid rgb(165, 108, 42);
 }
 
+.projects {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .project {
-    margin: 1em;
-    padding: 1em;
-    text-align: left;
-    background-color: rgb(255, 158, 46);
-    outline: 3px solid rgb(141, 86, 23);
-    border-radius: 25px;
+    min-width: 250px;
+    flex: 1;
+    outline: 1px solid rgb(165, 108, 42);
+    display: flex;
+    justify-content: stretch;
+    background-color: rgb(255, 162, 56);
+    padding: 1em 0 1em 0;
 }
 
-.projects .caption .head {
-    margin-block-start: 1em;
-    margin-left: 1em;
-}
-
-.project .cetvorka,
-.project p {
+.project-txt {
+    padding: 0 1em 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #fff;
 }
 
-.project p {
-    height: 8rem;
-}
-
-.project-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.2em 1em 0.2em 1em;
-    outline: 2px solid rgb(141, 86, 23);
-    background-color: rgb(255, 136, 0);
-    border-radius: 10px;
+.project-link:link,
+.project-link:visited {
+    padding: 0.5em 1em 0.5em 1em;
+    border: 1px solid rgb(165, 108, 42);
+    border-radius: 15px;
 }
 
 .project-link:hover,
 .project-link:focus {
-    background-color: rgb(141, 86, 23);
     color: #fff;
+    background-color: rgb(165, 108, 42);
 }
 
 .project-link:active {
-    background-color: rgb(110, 67, 18);
-    outline: 2px solid rgb(110, 67, 18);
+    color: #fff;
+    background-color: rgb(122, 80, 31);
+    border: 1px solid rgb(122, 80, 31);
 }
 
+.project .project-txt .bijela {
+    margin-block-end: 0;
+}
 /*Footer*/
 
 footer {
     background-color: rgb(57, 57, 57);
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 1em;
 }
@@ -259,6 +261,53 @@ a:hover, a:focus {
     outline: none;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, .textarea {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit {
+    width: 50%;
+}
+
+input[type=submit] {
+    width: 100%;
+    color: #fff;
+    background-color: rgb(255, 162, 56);
+    padding: 0.5em 1em 0.5em 1em;
+    border: 1px solid rgb(165, 108, 42);
+    border-radius: 15px;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background-color: rgb(165, 108, 42);
+}
+
 .go-up {
     display: flex;
     justify-content: right;
@@ -272,7 +321,7 @@ a:hover, a:focus {
 }
 
 .last-line {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     font-size: 0.9rem;
     text-align: center;
 }
