@@ -276,8 +276,8 @@ h4.bijela, .bijela{
 }
 
 .go-up a img:hover {
-    background-color: #555555;
-    outline: 1px solid #131313;
+    -webkit-filter: invert(1);
+    filter: invert(1);
     cursor: pointer;
 }
 
