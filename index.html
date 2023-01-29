@@ -1,199 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Balša, Dogandžić, portfolio">
-    <meta name="description" content="Ja sam Balša Dogandžić i ovo je moj lični portfolio web sajt.">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Hi, my name is Balša Dogandžić and this is my portfoilo web page, visit and find out more about me and what I do.">
+    <meta name="keywords" content="Balša Dogandžić, portfoilo, Software developer, web developer, skills, biography">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Balsa Dogandzic | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Balša Dogandžić | Portfolio</title>
 </head>
 
 <body>
-    <div class="container">
+    <header class="header">
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="https://github.com/Balsa-Dogandzic" class="fa fa-github" target="_blank"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.linkedin.com/in/balsadogandzic/" class="fa fa-linkedin" target="_blank"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.instagram.com/_balsa_d_/" class="fa fa-instagram" target="_blank"></a>
-                </li>
-            </ul>
-            <h3><a href="#about" class="about">O meni</a></h3>
+            <div class="nav-heading">Balša Dogandžić</div>
+            <div class="nav-links">
+                <ul class="nav-list">
+                    <li><a href="https://www.linkedin.com/in/balsadogandzic/" class="fa fa-linkedin"
+                            target="_blank"></a></li>
+                    <li><a href="https://github.com/Balsa-Dogandzic" class="fa fa-github" target="_blank"></a></li>
+                    <li><a href="https://www.instagram.com/_balsa_d_/" class="fa fa-instagram" target="_blank"></a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="front">
-            <div class="welcome">
-                <h1 class="heading">Balša Dogandžić - portfolio</h1>
-                <h2 class="heading">Student fakulteta za informacione sisteme i tehnologije</h2>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-heading">Software developer</h1>
+                <h3 class="hero-subheading">Java, Python, PHP, JavaScript...</h3>
             </div>
         </div>
-    </div>
-
-    <main>
-        <div class="separator" id="about"></div>
-        <div class="about-section">
-            <figure>
-                <img src="images/ja.jpg" alt="my picture">
-                <figcaption>Balša Dogandžić</figcaption>
-            </figure>
-            <section>
-                <h3 class="head">O meni:</h3>
-                <p class="para">
-                    Moje ime je Balša Dogandžić rođen sam u Podgorici 31.03.2001. Živim u Spužu, prigratskom naselju
-                    blizu Danilovgrada.
-                    Osnovno obrazovanje sam završio u Spužu u OŠ "Petar II Petrović Njegoš", zatim sam upisao Srednju
-                    Medicinsku Školu u
-                    Podgorici. Trenutno studiram fakultet za informacione sisteme i tehnologije na Univerzitetu Donja
-                    Gorica u Podgorici.
-                    Kada sam ulazio u svijet IT-a jako sam bio zainteresovan za web tehnologije, ali sam sada
-                    zainteresovan za različite oblasti
-                    informacionih tehnologija kao što su GIS i vještačka inteligencija. Programski jezici koje poznajem
-                    su Java, javaScript, Python i malo manje
-                    PHP. Imam iskustva u radu sada
-                    Django i Django REST Framework-om u Python-u. Moji hobiji van
-                    programiranja su vožnja bicikla, izlazak sa prijateljima, gledanje serija i filmova, i malo ređe
-                    igram video igrice.
+    </header>
+    <main class="main">
+        <div class="separator"></div>
+        <section class="biography">
+            <div class="biography-img">
+                <img src="img/ja.jpg" alt="my_pic">
+            </div>
+            <div class="biography-content">
+                <h3 class="biography-heading">Brief biography</h3>
+                <p class="biography-p">Birthday: <span class="biography-span">31/03/2001</span></p>
+                <p class="biography-p">Birth place: <span class="biography-span">Podgorica, Montenegro</span></p>
+                <p class="biography-p">My name is Balša Dogandžić, IT student. In this section you will find out more
+                    about me as a person.
                 </p>
-            </section>
-        </div>
-
-        <div class="separator" id="skills"></div>
-
-        <div class="skills-section">
-            <div class="caption">
-                <h3 class="head">Vještine:</h3>
+                <h4 class="biography-heading">Education</h4>
+                <p class="biography-p">I finished Elementary School called "Petar II Petrović Njegoš" in Spuž,
+                    Montenegro. After Elemetary
+                    School I got into Medical High School in Podgorica, capital of Montenegro specifically pharmacy.
+                    After graduating High School I became a student of Faculty of Informational Systems and Technologies
+                    at the University of Donja Gorica where I currently study.</p>
+                <h4 class="biography-heading">Hobbies</h4>
+                <p class="biography-p">The thing I like the most is going out with my friends to drink coffee and talk
+                    about different
+                    subjects. Other than that I like to spend time on my computer programming, obviusly. I also like
+                    watching podcasts, and sometimes sport events. Sports I like to do are cycling, football etc.</p>
             </div>
-            <div class="languages">
-                <h4 class="head cetvorka">Jezici</h4>
-                <ul class="skills">
-                    <li>Java</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>javaScript</li>
-                    <li>Python</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                </ul>
+        </section>
+        <div class="separator"></div>
+        <section class="skills">
+            <h2 class="skills-heading">Skills</h2>
+            <div class="container">
+                <div class="skill">
+                    <h3>Frontend</h3>
+                    <hr>
+                    <img src="img/frontend.png" alt="frontend">
+                    <p>I know basic stuff about frontend development, stuff like HTML, CSS and JS. With those tools I
+                        can build simple web layouts.</p>
+                </div>
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <hr>
+                    <img src="img/backend.png" alt="frontend">
+                    <p>For backend development I use PHP and Python, specifically Django. I know how to design and build
+                        databases and REST services.</p>
+                </div>
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <hr>
+                    <img src="img/programming.png" alt="frontend">
+                    <p>For programming I use general purpose programming languages like Java and Python. With those
+                        tools I can build cool GUI applications.</p>
+                </div>
             </div>
-            <div class="frameworks">
-                <h4 class="head cetvorka">Frameworks</h4>
-                <ul class="skills">
-                    <li>Django</li>
-                    <li>Django REST Framework</li>
-                </ul>
-            </div>
-            <div class="others">
-                <h4 class="head cetvorka">Ostale</h4>
-                <ul class="skills">
-                    <li>QGIS</li>
-                    <li>GitHub</li>
-                    <li>Debugging</li>
-                    <li>Research</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="separator" id="projects"></div>
-        <div class="projects-section">
-            <h3 class="head">Projekti:</h3>
+        </section>
+        <div class="separator"></div>
+        <section class="misc">
             <div class="projects">
-                <div class="project">
-                    <div class="project-txt">
-                        <h4 class="head cetvorka  bijela">Pedometar Android</h4>
-                        <p>
-                            Mobilna aplikacija za brojanje koraka napravljena pomoću Java programskog jezika, SQLite
-                            bazom podataka i XML korisničkim interfejsom.
-                        </p>
-                        <div>
-                            <a href="https://github.com/Balsa-Dogandzic/Pedometer_android" class="project-link"
-                                target="_blank">
-                                Pročitaj više
-                            </a>
-                        </div>
-                    </div>
+                <div>
+                    <h3>I build projects</h3>
+                    <hr>
+                    <p>Visit my public repositories <br> on GitHub to see my practical <br> skills in action.</p>
                 </div>
-                <div class="project">
-                    <div class="project-txt">
-                        <h4 class="head cetvorka  bijela">Sudoku scraper & solver</h4>
-                        <p>
-                            Aplikacija koja sa web-a skrejpuje podatke o pozicijama brojeva na sudoku tabli i omogućava
-                            korisniku da je riješi, ili da dobije riješenu slagalicu.
-                        </p>
-                        <div>
-                            <a href="https://github.com/Balsa-Dogandzic/sudoku_scraper_and_solver" class="project-link"
-                                target="_blank">
-                                Pročitaj više
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-txt">
-                        <h4 class="head cetvorka bijela">Gaming store API</h4>
-                        <p>
-                            REST API servis za potrebe prodavnice gejmerske opreme napravljen pomoću Django REST
-                            Framework-a i SQLite baze i JWT autentifikacije.
-                        </p>
-                        <div>
-                            <a href="https://github.com/Balsa-Dogandzic/Gaming_store_API" class="project-link"
-                                target="_blank">
-                                Pročitaj više
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://github.com/Balsa-Dogandzic?tab=repositories" target="_blank">Look at my work</a>
             </div>
-        </div>
+            <div class="contact">
+                <div>
+                    <h3>Contact me</h3>
+                    <hr>
+                    <p>Say hi!!!</p>
+                </div>
+                <h4>Personal mail:</h4>
+                <a href="mailto:balsa123dogandzic@gmail.com">balsa123dogandzic@gmail.com</a>
+                <h4>College mail:</h4>
+                <a href="mailto:balsa.dogandzic@udg.edu.me">balsa.dogandzic@udg.edu.me</a>
+            </div>
+        </section>
         <div class="separator"></div>
     </main>
-    <footer>
-        <div class="contact-info">
-            <h4 class="head cetvorka bijela">Kontakt informacije</h4>
-            <p class="bijela">Lični email:</p>
-            <p class="bijela"><a href="mailto:balsa123dogandzic@gmail.com">balsa123dogandzic@gmail.com</a></p>
-            <p class="bijela">Akademski email:</p>
-            <p class="bijela"><a href="mailto:balsa.dogandzic@udg.edu.me">balsa.dogandzic@udg.edu.me</a></p>
-            <p class="bijela">Društvene mreže:</p>
-            <ul class="social-networks">
-                <li class="github">
-                    <a href="https://github.com/Balsa-Dogandzic" class="fa fa-github" target="_blank"></a>
-                </li>
-                <li class="linkedin">
-                    <a href="https://www.linkedin.com/in/balsadogandzic/" class="fa fa-linkedin" target="_blank"></a>
-                </li>
-                <li class="instagram">
-                    <a href="https://www.instagram.com/_balsa_d_/" class="fa fa-instagram" target="_blank"></a>
-                </li>
-            </ul>
-        </div>
-        <div class="useful-links">
-            <h4 class="head cetvorka bijela">Linkovi na stranici</h4>
-            <p><a href="#about">O meni</a></p>
-            <p><a href="#skills">Vještine</a></p>
-            <p><a href="#projects">Projekti</a></p>
-        </div>
-        <div class="download">
-            <h4 class="head cetvorka bijela">Download</h4>
-            <p><a href="CVBalšaDogandžić.pdf" download>Moj CV</a></p>
-        </div>
-        <div class="go-up">
-            <a href="#" class="go-up-link">
-                <img src="images/-keyboard-arrow-up_90748.png" alt="arrow-up-key">
-            </a>
-        </div>
-        <div class="last-line bijela">
-            <p>Developed by: Balša Dogandžić</p>
-        </div>
-    </footer>
-
+    <footer class="footer"></footer>
 </body>
 
 </html>
