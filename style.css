@@ -219,15 +219,16 @@ h3.biography-heading {
 /*Misc*/
 .misc {
     width: 90%;
-    background-color: #fff;
     height: auto;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .misc .projects {
+    background-color: #fff;
     min-height: 90%;
     margin: 1em 0 1em 1em;
     padding: 1em;
@@ -235,7 +236,6 @@ h3.biography-heading {
     flex-direction: column;
     justify-content: space-between;
     color: var(--primary);
-    border-right: 3px solid #f1f1f1;
 }
 
 .misc .projects div h3 {
@@ -269,6 +269,7 @@ h3.biography-heading {
 }
 
 .misc .contact {
+    background-color: #fff;
     min-height: 90%;
     margin: 1em 1em 1em 0;
     padding: 1em;
@@ -306,6 +307,72 @@ h3.biography-heading {
 }
 
 /*Footer*/
+.footer {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-content .footer-section {
+    padding: 0.5em;
+    color: #fff;
+}
+
+.footer-content .footer-section h4 {
+    font-size: 1.3rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.footer-content .footer-section a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-content .footer-section a:hover,
+.footer-content .footer-section a:focus {
+    text-shadow: 0 0 5px #fff;
+}
+
+.footer-content .footer-section .socials {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .footer-section .socials a {
+    font-size: 2rem;
+}
+
+.footer-content .footer-section .page-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content .footer-section .page-links a {
+    margin-block-end: 1em;
+}
+
+.footer .copyright {
+    padding: 1em;
+    color: #fff;
+}
+
+.footer .copyright span {
+    font-weight: 700;
+}
  
 @media (max-width: 1024px) {
    :root {
@@ -348,6 +415,9 @@ h3.biography-heading {
     }
     .container .skill p {
         text-align: left;
+    }
+    .footer .footer-content {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -402,7 +472,39 @@ h3.biography-heading {
         grid-template-columns: repeat(1, 1fr);
     }
     .misc .projects {
-        border: none;
+        margin: 1em;
+    }
+    .misc .contact {
+        margin: 1em;
+    }
+    .misc .projects div h3,
+    .misc .contact div h3 {
+        font-size: 2rem;
+    }
+    .misc .contact div p,
+    .misc .projects div p{
+        font-size: 1.3rem;
+    }
+    .footer .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .footer-content .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .footer-content .footer-section h4 {
+        font-size: 1.5rem;
+    }
+    .footer-content .footer-section .page-links {
+        align-items: center;
+    }
+    .footer-content .footer-section .socials {
+        width: 40%;
+    }
+    .footer .copyright {
+        font-size: 1.3rem;
     }
 }
 
