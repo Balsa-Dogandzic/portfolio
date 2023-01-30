@@ -94,6 +94,7 @@ body {
 
 .nav .nav-links .nav-list li a:hover,
 .nav .nav-links .nav-list li a:focus {
+    outline: none;
     text-shadow: 0 0 5px var(--heading-text);
 }
 
@@ -288,6 +289,7 @@ h3.biography-heading {
 
 .misc .projects a:hover,
 .misc .projects a:focus {
+    outline: none;
     background-color: var(--primary);
     color: #fff;
 }
@@ -326,6 +328,7 @@ h3.biography-heading {
 
 .misc .contact a:hover,
 .misc .contact a:focus {
+    outline: none;
     color: #464646;
 }
 
@@ -365,6 +368,7 @@ h3.biography-heading {
 
 .footer-content .footer-section a:hover,
 .footer-content .footer-section a:focus {
+    outline: none;
     text-shadow: 0 0 5px #fff;
 }
 
