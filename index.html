@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div id="loader"></div>
     <header class="header">
         <nav class="nav">
             <div class="nav-heading">Balša Dogandžić</div>
@@ -143,6 +144,13 @@
         </div>
         <div class="copyright">Developed by <span>Balša Dogandžić</span></div>
     </footer>
+    <script>
+        let loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.animation = "fadeinout 1s linear forwards";
+            loader.style.webkitAnimation = "fadeinout 1s linear forwards";
+        })
+    </script>
 </body>
 
 </html>
