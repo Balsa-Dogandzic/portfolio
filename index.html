@@ -142,10 +142,11 @@
             </div>
             <div class="footer-section"></div>
         </div>
-        <div class="copyright">Developed by <span>Balša Dogandžić</span></div>
+        <div class="copyright">Copyright &#169; <span>Balša Dogandžić</span> <span id="year"></span></div>
     </footer>
     <script>
         let loader = document.getElementById("loader");
+        let year = document.getElementById("year");
         window.addEventListener("load", function () {
             loader.style.animation = "fadeinout 1s linear forwards";
             loader.style.webkitAnimation = "fadeinout 1s linear forwards";
@@ -153,6 +154,8 @@
                 loader.style.display = "none";
             }, 1000);
         })
+        let d = new Date()
+        year.innerHTML = d.getFullYear();
     </script>
 </body>
 
