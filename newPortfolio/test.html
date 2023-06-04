@@ -9,39 +9,51 @@
         content="Hi, my name is Balša Dogandžić and this is my portfoilo web page, visit and find out more about me and what I do.">
     <meta name="keywords" content="Balša Dogandžić, portfoilo, Software developer, web developer, skills, biography">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="test.css">
     <title>Balša Dogandžić | Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a class="logo" href="https://balsadogandzic.ml"><img src="img/logo_white.png" alt="logo"></a>
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <li><a href="/">Hello</a></li>
-                <li><a href="/">Skills</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-
-    <div class="hero">
+    <section class="hero">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#"><img src="img/logo_white.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Hello</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <div class="hero-content">
             <div class="hero-info">
-                <h1>Hello 👋</h1>
-                <p>I am a bachelor in computer science, and I like developing software feel free to contact
-                    me!!!</p>
+                <h1 class="hero-heading">Hello there 👋</h1>
+                <p>I'm a software developer with the knowledge in Java, Pyhton, JavaScript and PHP. Please feel free to
+                    explore this website and learn more about my work.</p>
+                <a href="#" class="hero-link">Learn more</a>
             </div>
-            <div class="grid2">Majmun</div>
+            <div class="hero-pic">
+                <img src="img/ja.jpg" alt="my_picture">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <div class="separator"></div>
+
+    <section class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">PHP</div>
+        <div class="skill">javaScript</div>
+    </section>
+
+    <div class="separator"></div>
+
 </body>
 
 </html>
