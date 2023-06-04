@@ -9,154 +9,64 @@
         content="Hi, my name is Balša Dogandžić and this is my portfoilo web page, visit and find out more about me and what I do.">
     <meta name="keywords" content="Balša Dogandžić, portfoilo, Software developer, web developer, skills, biography">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="style.css">
     <title>Balša Dogandžić | Portfolio</title>
 </head>
 
 <body>
-    <div id="loader"></div>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-heading">Balša Dogandžić</div>
-            <div class="nav-links">
-                <ul class="nav-list">
-                    <li><a href="https://www.linkedin.com/in/balsadogandzic/" class="fa fa-linkedin"
-                            target="_blank"></a></li>
-                    <li><a href="https://github.com/Balsa-Dogandzic" class="fa fa-github" target="_blank"></a></li>
-                    <li><a href="https://www.instagram.com/_balsa_d_/" class="fa fa-instagram" target="_blank"></a></li>
-                </ul>
-            </div>
+    <section class="hero">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#"><img src="img/logo_white.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Hello</a></li>
+                <li><a href="https://www.linkedin.com/in/balsadogandzic/" target="_blank">Skills</a></li>
+                <li><a href="https://github.com/Balsa-Dogandzic" target="_blank">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button id="collapse">&blacktriangleleft;</button></li>
+            </ul>
         </nav>
-        <div class="hero">
-            <div class="hero-content">
-                <h1 class="hero-heading">Software developer</h1>
-                <h3 class="hero-subheading">Java, Python, PHP, JavaScript...</h3>
+        <div class="hero-content">
+            <div class="hero-info">
+                <h1 class="hero-heading">Hello there 👋</h1>
+                <p>I'm a software developer with the knowledge in Java, Pyhton, JavaScript and PHP. Please feel free to
+                    explore this website and learn more about my work.</p>
+                <a href="#" class="hero-link">Learn more</a>
+            </div>
+            <div class="hero-pic">
+                <img src="img/ja.jpg" alt="my_picture">
             </div>
         </div>
-    </header>
-    <main class="main">
-        <div class="separator" id="biography"></div>
-        <section class="biography">
-            <div class="biography-img">
-                <img src="img/ja.jpg" alt="my_pic">
-            </div>
-            <div class="biography-content">
-                <h3 class="biography-heading">Brief biography</h3>
-                <p class="biography-p">Birthday: <span class="biography-span">31/03/2001</span></p>
-                <p class="biography-p">Birth place: <span class="biography-span">Podgorica, Montenegro</span></p>
-                <p class="biography-p">My name is Balša Dogandžić, IT student. In this section you will find out more
-                    about me as a person.
-                </p>
-                <h4 class="biography-heading">Education</h4>
-                <p class="biography-p">I finished Elementary School called "Petar II Petrović Njegoš" in Spuž,
-                    Montenegro. After Elemetary
-                    School I got into Medical High School in Podgorica, capital of Montenegro specifically pharmacy.
-                    After graduating High School I became a student of Faculty of Informational Systems and Technologies
-                    at the University of Donja Gorica where I currently study.</p>
-                <h4 class="biography-heading">Hobbies</h4>
-                <p class="biography-p">The thing I like the most is going out with my friends to drink coffee and talk
-                    about different
-                    subjects. Other than that I like to spend time on my computer programming, obviusly. I also like
-                    watching podcasts, and sometimes sport events. Sports I like to do are cycling, football etc.</p>
-            </div>
-        </section>
-        <div class="separator" id="skills"></div>
-        <section class="skills">
-            <h2 class="skills-heading">Skills</h2>
-            <div class="container">
-                <div class="skill">
-                    <h3>Frontend</h3>
-                    <hr>
-                    <img src="img/frontend.png" alt="frontend">
-                    <p>I know basic stuff about frontend development, stuff like HTML, CSS and JS. With those tools I
-                        can build simple web layouts.</p>
-                </div>
-                <div class="skill">
-                    <h3>Backend</h3>
-                    <hr>
-                    <img src="img/backend.png" alt="frontend">
-                    <p>For backend development I use PHP and Python, specifically Django. I know how to design and build
-                        databases and REST services.</p>
-                </div>
-                <div class="skill">
-                    <h3>Programming</h3>
-                    <hr>
-                    <img src="img/programming.png" alt="frontend">
-                    <p>For programming I use general purpose programming languages like Java and Python. With those
-                        tools I can build cool GUI applications.</p>
-                </div>
-            </div>
-        </section>
-        <div class="separator" id="misc"></div>
-        <section class="misc">
-            <div class="projects">
-                <div>
-                    <h3>I build projects</h3>
-                    <hr>
-                    <p>Visit my public repositories <br> on GitHub to see my practical <br> skills in action.</p>
-                </div>
-                <a href="https://github.com/Balsa-Dogandzic?tab=repositories" target="_blank">Look at my work</a>
-            </div>
-            <div class="contact">
-                <div>
-                    <h3>Contact me</h3>
-                    <hr>
-                    <p>Say hi!!!</p>
-                </div>
-                <h4>Personal mail:</h4>
-                <a href="mailto:balsa123dogandzic@gmail.com">balsa123dogandzic@gmail.com</a>
-                <h4>College mail:</h4>
-                <a href="mailto:balsa.dogandzic@udg.edu.me">balsa.dogandzic@udg.edu.me</a>
-            </div>
-        </section>
-        <div class="separator"></div>
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Contact info</h4>
-                <p>Personal email:</p>
-                <a href="mailto:balsa123dogandzic@gmail.com">balsa123dogandzic@gmail.com</a>
-                <p>Academic email:</p>
-                <a href="mailto:balsa.dogandzic@udg.edu.me">balsa.dogandzic@udg.edu.me</a>
-                <p>Socials</p>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/balsadogandzic/" class="fa fa-linkedin" target="_blank"></a>
-                    <a href="https://github.com/Balsa-Dogandzic" class="fa fa-github" target="_blank"></a>
-                    <a href="https://www.instagram.com/_balsa_d_/" class="fa fa-instagram" target="_blank"></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Web page links</h4>
-                <div class="page-links">
-                    <a href="#">Header</a>
-                    <a href="#biography">Biography</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#misc">Projects/Contact</a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Downloads</h4>
-                <a href="CVBalšaDogandžić.pdf" download>Resume</a>
-            </div>
-            <div class="footer-section"></div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="skills">
+        <button id="button-left">&lt;</button>
+        <button id="button-right">&gt;</button>
+        <div class="horizontal-scroll">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">PHP</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">javaScript</div>
+            <div class="skill">Linux</div>
+            <div class="skill">Flask</div>
+            <div class="skill">Django</div>
+            <div class="skill">SQL</div>
         </div>
-        <div class="copyright">Copyright &#169; <span>Balša Dogandžić</span> <span id="year"></span></div>
-    </footer>
-    <script>
-        let loader = document.getElementById("loader");
-        let year = document.getElementById("year");
-        window.addEventListener("load", function () {
-            loader.style.animation = "fadeinout 1s linear forwards";
-            loader.style.webkitAnimation = "fadeinout 1s linear forwards";
-            setTimeout(function () {
-                loader.style.display = "none";
-            }, 1000);
-        })
-        let d = new Date()
-        year.innerHTML = d.getFullYear();
-    </script>
+
+    </section>
+
+    <div class="separator"></div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
