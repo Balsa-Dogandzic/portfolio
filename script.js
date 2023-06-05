@@ -1,3 +1,8 @@
+//Loader
+window.addEventListener("load", (event) => {
+  let loader = document.getElementById("loader");
+  loader.style.display = "none";
+});
 //Navigation collapse button
 let checkBox = document.getElementById("check");
 let collapse = document.getElementById("collapse");

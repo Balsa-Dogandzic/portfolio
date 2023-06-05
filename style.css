@@ -32,6 +32,20 @@ li {
   background-color: #fff;
 }
 
+#loader {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url(img/loader.gif);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Hero section */
 .hero {
   position: relative;
