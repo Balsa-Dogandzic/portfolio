@@ -37,7 +37,7 @@ li {
   position: relative;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-image: url(img/pexels-jakub-novacek-924824.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -155,6 +155,9 @@ li {
 
 /* Projects section */
 
+.projects {
+  outline: 1px solid rgb(60, 52, 67);
+}
 /* Media queries */
 
 @media (max-width: 768px) {
