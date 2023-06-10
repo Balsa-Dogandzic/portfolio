@@ -1,3 +1,12 @@
+//Loader fade out
+window.addEventListener("load", (event) => {
+  let s = document.getElementById("loader").style;
+  s.opacity = 1;
+  (function fade() {
+    (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 100);
+  })();
+});
+
 //Navigation collapse button
 let checkBox = document.getElementById("check");
 let collapse = document.getElementById("collapse");
