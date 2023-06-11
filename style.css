@@ -3,6 +3,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -51,7 +55,7 @@ li {
   position: relative;
   top: 0;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   background-image: url(img/pexels-jakub-novacek-924824.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -169,8 +173,32 @@ li {
 
 /* Projects section */
 
+.projects-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.7;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+
+.projects-intro h2 {
+  font-size: 2rem;
+  color: rgb(40, 40, 40);
+}
+
+.projects-intro p {
+  color: hsl(0, 0%, 30%);
+}
+
+.projects-intro p a {
+  font-weight: 600;
+  color: rgb(60, 52, 67);
+}
+
 .project-description {
-  color: var(hsl(0, 0%, 30%));
+  color: hsl(0, 0%, 30%);
   white-space: wrap;
   font-size: 1em;
   line-height: 1.7;
@@ -224,6 +252,7 @@ li {
   font-weight: 700;
   border-left: 3px solid rgb(60, 52, 67);
   padding-left: 12px;
+  color: rgb(40, 40, 40);
 }
 
 .skills-used {
@@ -255,7 +284,7 @@ li {
   box-shadow: 8px 16px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* RESPONSIVE QUERIES */
+/* Project section media queries */
 
 @media (min-width: 320px) {
   .title-flex {
@@ -327,6 +356,20 @@ li {
   }
 }
 
+/* Footer */
+
+footer {
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(60, 52, 67);
+  color: #fff;
+}
+
+footer .copyright span {
+  font-weight: 600;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
@@ -363,5 +406,8 @@ li {
   }
   .hero-link {
     font-size: 1rem;
+  }
+  .projects-intro h2 {
+    font-size: 1.5rem;
   }
 }

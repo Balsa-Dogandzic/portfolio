@@ -39,3 +39,7 @@ setInterval(() => {
     scrollMenu.scrollBy(scrollRange, 0);
   }
 }, 3500);
+
+let yearSpan = document.getElementById("year");
+let date = new Date();
+yearSpan.innerHTML = date.getFullYear();
